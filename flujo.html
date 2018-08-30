@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flujo</title>
 </head>
+
 <body>
     <script>
         // var contraseña;
         // console.log("la contraseña es:" + contraseña);
         const pi = 3.141516;
-        if(1 != 2){
-            
+        if (1 != 2) {
+
             console.log("Es verdadero");
-        }else {
+        } else {
             console.log("Es falso");
-        }   
+        }
         // pi = 5;
         var dia = "l";
         console.log(pi);
-        
-         switch (dia) {
-             case "lunes":
-                 console.log("dia lunes")
-                 break;
+
+        switch (dia) {
+            case "lunes":
+                console.log("dia lunes")
+                break;
             case "martes":
-                 console.log("dia martes")
-                 break;
-             default:
-             console.log("no es un dia");
-                 break;
-         }
+                console.log("dia martes")
+                break;
+            default:
+                console.log("no es un dia");
+                break;
+        }
+        var x = 0;
+        while (x < 10) {
+            x++;
+            console.log(x);
+        }
+
+        var y = 10;
+        do {
+            y--;
+            console.log(y);
+        } while (y > 0)
+
+
+        var array = ["lunes", "martes"]
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            console.log(element);
+
+        }
+
+        for (let dia of array) {
+            console.log(dia);
+        }
+
+        array.forEach(function (dia) {
+            console.log(dia)
+        });
+
+
+        array.forEach(function (dia) {
+            console.log(dia)
+        });
+
+
+
+        array.forEach((dia, index) => {
+            var objeto = { valor: "1" };
+            }
+            
+        );
+
+        var celular = {
+            marca : "samsung",
+            modelo: 2010,
+
+        }
+
+        for (const key in celular) {
+            console.log(celular[key]);
+        }
+        
     </script>
 </body>
+
 </html>
