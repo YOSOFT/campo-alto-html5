@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables</title>
+ 
+</head>
+<body>
+    <script>
+        var numero = 3, otra = 2;
+        console.log("Tipo de numero",typeof numero, numero);
+        
+        var cadena = "cadena de texto";
+        console.log("Tipo de cadena",typeof cadena, cadena);
+
+        var celular = { 
+            marca: "Samsung",
+            modelo: 2011,
+            encender : function() {
+                console.log("Celular encendido");
+            }
+        };
+        console.log("marca",celular.marca);
+
+         console.log("modelo",celular['modelo']);
+
+
+        console.log("Tipo de celular", typeof celular, celular);
+
+
+        var array = [1,3, "cadena", {propiedad: "valor"}];
+
+        console.log(typeof array)
+
+        console.log(array[3]);
+
+        console.log("longitud del array",array.length);
+
+        array.push("lunes");
+        console.log(array);
+
+        array.pop();
+        console.log(array);
+
+        array.shift();
+        console.log(array);
+
+        array.unshift("valor nuevo");
+        console.log(array);
+
+        array.splice(1,2);
+        console.log(array);
+    </script>
+</body>
+</html>
